@@ -37,8 +37,9 @@
   </div>
 
   <div class="field">
-    <%= f.label :TaskList_id %>
-    <%= f.text_field :TaskList_id %>
+    <%= f.label :TaskList_id %><br>
+    <!--%= f.text_field :TaskList_id %-->
+    <%= f.collection_select :TaskList_id, TaskList.all, :id, :name, prompt: true %>
   </div>
 
   <div class="actions">
