@@ -1,0 +1,12 @@
+<h1>Editing Task</h1>
+
+<!--%= render 'form', task: @task %-->
+<form>
+	<select name="mytask">
+		<% @task.each do | t | %>
+		<option><%= t.title %></option>
+	</select>
+</form>
+
+<%= link_to 'Show', @task %> |
+<%= link_to 'Back', tasks_path %>

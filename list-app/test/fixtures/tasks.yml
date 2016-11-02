@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  priority: 1
+  duedate: 2016-11-01
+  iscompleted: false
+  TaskList: one
+
+two:
+  title: MyString
+  description: MyText
+  priority: 1
+  duedate: 2016-11-01
+  iscompleted: false
+  TaskList: two
