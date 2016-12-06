@@ -4,4 +4,9 @@
 		<li><%= link_to 'Tasks', '/tasks' %></li>
 		<li><%= link_to 'Task Lists', '/task_lists' %></li>
 	</ul>
+	<% if session[:user_id] %>
+		<%= link_to 'Logout', logout_path %>
+	<% else %>
+		<%= link_to 'Login', login_path %>
+	<% end %>
 </aside>
